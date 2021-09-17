@@ -8,17 +8,12 @@ import { ErrorComponent } from './error.component';
 import { ProductDetailComponent } from './product-detail.component';
 import { ProductService } from './product.service';
 import { HomeModule } from './home';
+import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContactComponent,
-    ProductComponent,
-    ErrorComponent,
-    ProductDetailComponent,
-  ],
-  imports: [BrowserModule, FormsModule, HomeModule, RouterModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule, HomeModule, AppRoutingModule],
   providers: [ProductService],
   bootstrap: [AppComponent],
 })
